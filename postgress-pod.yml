@@ -1,0 +1,13 @@
+appVersion: v1
+kind: Pod
+metadata:
+  name: postgress-app-pod
+  labels:
+    name: postgress-app-pod
+    app: demo-app
+spec:
+  containers:
+    - name: postgress-app
+      image: postgress:9.4
+      ports:
+        - containersPort: 5432
