@@ -1,4 +1,4 @@
-appVersion: v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: postgress-app-pod
@@ -10,4 +10,4 @@ spec:
     - name: postgress-app
       image: postgress:9.4
       ports:
-        - containersPort: 5432
+        - containerPort: 5432
